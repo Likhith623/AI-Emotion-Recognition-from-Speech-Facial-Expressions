@@ -1,0 +1,54 @@
+https://www.kaggle.com/datasets/entenam/reddit-mental-health-dataset
+
+1. Understanding Your Dataset Columns
+ - selftext
+
+This is the main text of the Reddit post.
+👉 This is the input for your ML model.
+ 
+ - subreddit
+
+This tells you which mental health category it belongs to, like:
+
+anxiety
+
+depression
+
+stress
+
+OCD
+
+bipolar
+
+PTSD
+
+ADHD
+- Very useful for labeling.
+
+✔ title
+
+Optional — you can combine it with text.
+
+- Label
+
+This seems to be the main label (mental health class).
+Probably values like:
+
+Anxiety
+
+Depression
+
+Stress
+
+PTSD
+
+OCD
+
+suicidal
+
+etc.
+
+ - CAT1
+
+This is likely a secondary label or category.
+Not important for your 4 tasks.

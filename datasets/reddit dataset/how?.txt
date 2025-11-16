@@ -1,0 +1,80 @@
+There were many csv files, with each csv file having few rows (few datapoints) for each label.
+
+folder: reddit 
+             -- raw datapoints
+                 -- 2019
+                       -- Jan
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv
+                       -- Feb
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv
+
+                       -- Mar
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv                       
+                       -- Apr
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv
+                       -- May 
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv
+                       -- Jul
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv
+                       -- Jul
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv
+                       -- Aug
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv
+                       -- Sep
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv
+                       -- Oct
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv
+                       -- Nov
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv 
+                       -- Dec
+                               -- lonely.csv
+                               -- depression.csv
+                               -- mentalhealth.csv
+                               -- anxiety.csv
+                -- 2020
+                       -- Same
+                -- 2021
+                       -- Same
+                -- 2022
+                       -- Same
+             -- labelled
+                -- 1.csv
+                -- 2.csv
+
+1. We merged all CSV files from 2019 and 2022 whose filenames started with “lo”, “dep”, “an”, and “mh”, collecting every month’s data into four big category-wise datasets. 
+(more_onlylonely.csv, more_onlymentalhealth.csv, more_onlydepression.csv, more_onlyanxiety.csv, more_onlysuicide.csv)
+2. Each merged file now represents one mental-health category: lonely → depression-type data, dep → depression, an → anxiety, mh → general mental-health posts.
+3. These merged datasets were labeled and combined into one master dataset (MASTER_DATASET.csv) to train our text-based models (anxiety, depression, suicide, etc.)
