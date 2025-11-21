@@ -1,10 +1,46 @@
+1. Train Text Model (already documented)
+
+
+
+2. Train Speech Model
 Audio (for speech stress/ emotion)
 Extract features using librosa → MFCC, pitch, energy, jitter, RMS
 Train a classification ML model
 → SVM / RandomForest / XGBoost
 
+
+
+3. Train cam Model
 Facial Emotion
 Extract features
 Use OpenCV to detect landmarks / facial ratios
 Or use a pretrained model like FAcial Emotion via FER to get features
 Train an ML classifier
+
+
+
+4. Combine the outputs (Model Fusion)
+
+I will not just use one model. Instead, combine predictions from:
+
+Text Model
+
+Speech Model
+
+cam Model
+
+
+
+5. Integrate into UI (Chatbot + Webcam + Audio)
+
+Step 1: User chats with the personalized bot → text analysis
+
+Step 2: Webcam capture - Before or during the chat (finite/always on) → facial evaluation
+
+Step 3: Mic record - Before or during the chat (finite/always on) → voice analysis
+
+Step 4: Fusion → risk prediction shown
+
+
+
+6. Show the results/predictions on the user's dashboard and integrate "twilio" for notifications.
