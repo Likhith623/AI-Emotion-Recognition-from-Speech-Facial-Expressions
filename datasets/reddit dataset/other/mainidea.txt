@@ -1,0 +1,10 @@
+Audio (for speech stress/ emotion)
+Extract features using librosa → MFCC, pitch, energy, jitter, RMS
+Train a classification ML model
+→ SVM / RandomForest / XGBoost
+
+Facial Emotion
+Extract features
+Use OpenCV to detect landmarks / facial ratios
+Or use a pretrained model like FAcial Emotion via FER to get features
+Train an ML classifier
